@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autentificare — Atelierul de broderie</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .login-container {
+        max-width: 400px;
+        margin: 60px auto;
+        background: var(--card);
+        border-radius: 14px;
+        box-shadow: 0 6px 18px rgba(18, 18, 18, 0.06);
+        padding: 36px 28px 28px 28px;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
+      .login-container h2 {
+        margin: 0 0 12px 0;
+        font-weight: 700;
+        text-align: center;
+      }
+      .login-container label {
+        font-weight: 600;
+        margin-bottom: 4px;
+      }
+      .login-container input {
+        width: 100%;
+        padding: 12px;
+        border-radius: 8px;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        margin-bottom: 12px;
+        font-size: 16px;
+      }
+      .login-container .btn {
+        width: 100%;
+        margin-top: 8px;
+      }
+      .login-container .login-footer {
+        text-align: center;
+        color: var(--muted);
+        font-size: 14px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Autentificare</h2>
+      <form>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="you@example.com"
+          required
+        />
+        <label for="password">Parolă</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Parola"
+          required
+        />
+        <button class="btn" type="submit">Conectează-te</button>
+      </form>
+      <div class="login-footer">
+        Nu ai cont? <a href="#">Înregistrează-te</a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Embroidery Shop — Handmade Embroidered Goods</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="container">
+      <div class="nav">
+        <div class="brand">
+          <div class="logo">AB</div>
+          <div>
+            <div style="font-weight: 700">Atelierul de broderie</div>
+            <div style="font-size: 12px; color: var(--muted)">
+              Handmade • Design personalizat
+            </div>
+          </div>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="#products">Produse</a></li>
+            <li><a href="#about">Despre noi</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="actions">
+          <button class="btn" link="Search">Login</button>
+          <button class="btn" id="shopNow">Vezi produsele</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <div>
+          <h1>Broderie frumoasa si durabila — facuta sa reziste.</h1>
+          <p>
+            Explorează o mică selecție atent selecționată de îmbrăcăminte
+            brodată, etichete și textile pentru casă create cu grijă. Fiecare
+            piesă este gata de purtat sau oferită cadou.
+          </p>
+          <div class="hero-cta">
+            <button class="btn" id="ctaShop">Descopera produsele</button>
+            <a class="ghost" href="#about">Afla mai multe</a>
+          </div>
+
+          <div style="margin-top: 18px; color: var(--muted); font-size: 14px">
+            Livrare gratuita pentru comenzi de peste 200 de lei • Handmade in
+            loturi mici
+          </div>
+        </div>
+
+        <aside class="hero-visual">
+          <img
+            src="images/download (6).jpeg"
+            alt="embroidered fabric closeup"
+          />
+        </aside>
+      </section>
+
+      <section id="products">
+        <div class="section-title">
+          <h2 style="margin: 0">Produse recomandate</h2>
+          <div style="color: var(--muted); font-size: 14px">
+            Selecții atent alese — articole noi lunar
+          </div>
+        </div>
+
+        <div class="grid" id="productGrid">
+          <!-- Product cards inserted by JavaScript -->
+        </div>
+      </section>
+
+      <section class="newsletter" aria-label="Subscribe">
+        <div style="font-weight: 700">Înscrie-te la newsletter-ul nostru</div>
+        <div style="color: var(--muted); font-size: 14px">
+          Fii primul care află despre lansările noi și reducerile
+        </div>
+        <div style="flex: 1"></div>
+        <input
+          type="email"
+          id="email"
+          placeholder="you@example.com"
+          aria-label="Email address"
+        />
+        <button class="btn">Înscrie-te</button>
+      </section>
+
+      <section id="about" style="margin-top: 18px">
+        <h3>Despre munca noastră</h3>
+        <p style="color: var(--muted); max-width: 760px">
+          Toate articolele sunt concepute și brodate local folosind fire de
+          înaltă calitate și țesături obținute responsabil. Ne concentrăm pe
+          designuri durabile și serii limitate, astfel încât fiecare piesă să se
+          simtă specială.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+            align-items: center;
+          "
+        >
+          <div style="font-weight: 700">Atelierul de broderie</div>
+          <div style="color: var(--muted)">
+            © <span id="year"></span> Toate drepturile rezervate
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal quick view -->
+    <div
+      class="modal"
+      id="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+    >
+      <div class="modal-card" role="document">
+        <img id="modalImg" src="" alt="" />
+        <div class="modal-body">
+          <h3 id="modalTitle"></h3>
+          <div style="color: var(--muted); margin: 8px 0" id="modalDesc"></div>
+          <div
+            style="font-size: 18px; font-weight: 700; color: var(--accent)"
+            id="modalPrice"
+          ></div>
+          <div style="margin-top: 16px; display: flex; gap: 8px">
+            <button class="btn">Adaugă în coș</button>
+            <button class="ghost" id="closeModal">Închide</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="products.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

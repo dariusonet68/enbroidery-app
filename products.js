@@ -1,0 +1,51 @@
+// Product data for Embroidery Shop
+const products = [
+  {
+    id: 1,
+    name: 'Floral Patch Jacket',
+    price: 58,
+    tag: 'Apparel',
+    img: 'images/download (5).jpeg',
+    desc: 'A handcrafted floral patch sewn onto a durable denim jacket.',
+  },
+  {
+    id: 2,
+    name: 'Minimal Wave Tee',
+    price: 34,
+    tag: 'Apparel',
+    img: 'images/download (5).jpeg',
+    desc: 'Soft cotton tee with subtle embroidered wave motif.',
+  },
+  {
+    id: 3,
+    name: 'Sunrise Hoop Art',
+    price: 45,
+    tag: 'Home',
+    img: 'images/download (5).jpeg',
+    desc: 'Ready-to-hang embroidered hoop with sunrise design.',
+  },
+  {
+    id: 4,
+    name: 'Botanical Tote',
+    price: 29,
+    tag: 'Accessory',
+    img: 'images/download (5).jpeg',
+    desc: 'Sturdy canvas tote with hand-stitched botanical pattern.',
+  },
+  {
+    id: 5,
+    name: 'Monogram Hat',
+    price: 22,
+    tag: 'Accessory',
+    img: 'images/download (5).jpeg',
+    desc: 'Adjustable cap featuring a small monogram.',
+  },
+  {
+    id: 6,
+    name: 'Home Pillow',
+    price: 66,
+    tag: 'Home',
+    img: 'images/download (5).jpeg',
+    desc: 'Decorative pillow with textured embroidery.',
+  },
+];
