@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Autentificare — Atelierul de broderie</title>
+    <title>Înregistrare — Atelierul de broderie</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
       rel="stylesheet"
@@ -21,8 +21,16 @@
   </head>
   <body>
     <div class="login-container">
-      <h2>Autentificare</h2>
+      <h2>Înregistrare</h2>
       <form>
+        <label for="name">Nume complet</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Numele tău complet"
+          required
+        />
         <label for="email">Email</label>
         <input
           type="email"
@@ -39,20 +47,25 @@
           placeholder="Parola"
           required
         />
-        <button class="btn btn-success" type="submit">Conectează-te</button>
+        <label for="confirm-password">Confirmă parola</label>
+        <input
+          type="password"
+          id="confirm-password"
+          name="confirm-password"
+          placeholder="Confirmă parola"
+          required
+        />
+        <button class="btn btn-success w-100 mt-3" type="submit">
+          Înregistrează-te
+        </button>
       </form>
-      <div class="login-footer">
-        Nu ai cont?
-        <a class="btn btn-primary" href="/signup.html">Înregistrează-te</a>
+      <div class="login-footer mt-3">
+        Ai deja cont?
+        <a class="btn btn-primary" href="/login.html">Autentificare</a>
       </div>
-      <div>
-        <a href="/forgotPassword.html" class="btn btn-warning"
-          >Ai uitat parola?</a
-        >
-      </div>
-      <div>
-        <a href="/index.html" class="btn btn-secondary">
-          Înapoi la pagina principala</a
+      <div class="mt-2">
+        <a href="/index.html" class="btn btn-secondary w-100"
+          >Înapoi la pagina principală</a
         >
       </div>
     </div>

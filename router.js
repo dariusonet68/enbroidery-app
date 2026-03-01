@@ -9,6 +9,8 @@ const routes = {
   404: '/pages/404.html',
   '/': '/pages/index.html',
   '/login.html': '/pages/login.html',
+  '/signup.html': '/signup.html',
+  '/forgotPassword.html': '/forgotPassword.html',
 };
 
 const handleLocation = async () => {
