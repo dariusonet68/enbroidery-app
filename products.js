@@ -49,3 +49,31 @@ const products = [
     desc: 'Decorative pillow with textured embroidery.',
   },
 ];
+
+const cardsContainer = document.querySelector('#card-container');
+
+function renderCards(data) {
+  let cardElements = '';
+
+  if (data && data.length > 0) {
+    data.forEach((product) => {
+      const html = `
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <div class="card mb-4 d-flex align-items-center justify-content-center mx-auto" style="max-width: 20rem;">
+          <img src="${product.img}" class="card-img-top mx-auto d-block" alt="${product.name}" style="width: 100%; max-height: 220px; object-fit: cover; border-radius: 1rem; margin-top: 1rem;" />
+          <div class="card-body text-center">
+            <h5 class="card-title">${product.name}</h5>
+            <p class="card-text">${product.desc}</p>
+            <p class="card-text"><strong>$${product.price}</strong></p>
+            <button class="btn btn-primary add-to-cart" data-id="${product.id}">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      `;
+      cardElements += html;
+    });
+  }
+  cardsContainer.innerHTML = cardElements;
+}
+
+renderCards(products);

@@ -11,6 +11,7 @@ const routes = {
   '/login.html': '/pages/login.html',
   '/signup.html': '/signup.html',
   '/forgotPassword.html': '/forgotPassword.html',
+  '/products.html': '/products.html',
 };
 
 const handleLocation = async () => {
@@ -20,7 +21,7 @@ const handleLocation = async () => {
   document.getElementById('main-page').innerHTML = html;
 };
 
-window.onpopstate = handleLocationt;
+window.onpopstate = handleLocation;
 window.router = router;
 
 handleLocation();
